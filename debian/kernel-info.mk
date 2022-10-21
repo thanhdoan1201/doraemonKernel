@@ -18,13 +18,13 @@ KERNEL_BOOTIMAGE_CMDLINE = androidboot.selinux=permissive console=ttyMSM0,115200
 DEVICE_VENDOR = xiaomi
 
 # Slug for the device model. Like above.
-DEVICE_MODEL = sweet
+DEVICE_MODEL = miatoll
 
 # Slug for the device platform. If unsure, keep this commented.
 #DEVICE_PLATFORM = platform
 
 # Marketing-friendly full-name. This will be used inside package descriptions
-DEVICE_FULL_NAME = Xiaomi Redmi Note 10 Pro
+DEVICE_FULL_NAME = Xiaomi Redmi Note 9 Pro
 
 # Whether to use configuration fragments to augment the kernel configuration.
 # If unsure, keep this to 0.
@@ -40,7 +40,7 @@ KERNEL_CONFIG_USE_DIFFCONFIG = 0
 #KERNEL_PRODUCT_DIFFCONFIG = my_diffconfig
 
 # Defconfig to use
-KERNEL_DEFCONFIG = vendor/sweet-halium_defconfig
+KERNEL_DEFCONFIG = vendor/miatoll-halium_defconfig
 
 # Whether to include DTBs with the image. Use 0 (no) or 1.
 KERNEL_IMAGE_WITH_DTB = 1
@@ -56,7 +56,7 @@ KERNEL_IMAGE_WITH_DTB_OVERLAY = 1
 # Path to the DTB overlay.
 # If you leave this undefined, an attempt to find it automatically
 # will be made.
-KERNEL_IMAGE_DTB_OVERLAY = arch/arm64/boot/dts/qcom/sweet-sdmmagpie-overlay.dtbo
+KERNEL_IMAGE_DTB_OVERLAY = arch/arm64/boot/dts/qcom/miatoll-sdmmagpie-overlay.dtbo
 
 # Whether to include the DTB Overlay into the kernel image
 # Use 0 (no, default) or 1.
@@ -65,7 +65,7 @@ KERNEL_IMAGE_WITH_DTB_OVERLAY_IN_KERNEL = 0
 
 # Path to a specifc configuration file for mkdtboimg.
 # The default is to leave it undefined.
-KERNEL_IMAGE_DTB_OVERLAY_CONFIGURATION = debian/sweet.cfg
+KERNEL_IMAGE_DTB_OVERLAY_CONFIGURATION = debian/miatoll.cfg
 
 # Path to the DTB directory. Only define if KERNEL_IMAGE_DTB_OVERLAY_CONFIGURATION
 # is defined too.
@@ -88,7 +88,7 @@ KERNEL_BOOTIMAGE_DTB_OFFSET = 0x01f00000
 # Devices launched with Android 9: version 1
 # Devices launched with Android 10: version 2
 # Devices launched with Android 11: version 2 or 3 (GKI)
-KERNEL_BOOTIMAGE_VERSION = 3
+KERNEL_BOOTIMAGE_VERSION = 2
 
 ########################################################################
 # Android verified boot
